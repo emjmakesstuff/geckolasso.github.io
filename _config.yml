@@ -14,10 +14,6 @@ minima:
 
 email: lab@geckolasso.example.edu
 
-header_pages:
-  - publications.html
-  - team.html
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

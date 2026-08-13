@@ -12,6 +12,8 @@ description: "Gecko-adhesion-inspired grasping and retrieval systems research."
 </p>
 <p><em>Placeholder copy &mdash; swap in your real project description.</em></p>
 
+<p><a href="#publications">Publications</a> &middot; <a href="#team">Team</a></p>
+
 <h2>How it works</h2>
 <ol>
   <li><strong>Approach</strong> &mdash; The tether is thrown or extended toward the target, no alignment required.</li>
@@ -20,18 +22,24 @@ description: "Gecko-adhesion-inspired grasping and retrieval systems research."
   <li><strong>Release</strong> &mdash; A peel angle change drops adhesion to near zero on command.</li>
 </ol>
 
-<h2>Recent publications</h2>
+<h2 id="publications">Publications</h2>
+{% assign pubs_by_year = site.data.publications | group_by: "year" %}
+{% for group in pubs_by_year %}
+<h3>{{ group.name }}</h3>
 <ul>
-  {% for pub in site.data.publications limit:3 %}
-  <li>{{ pub.title }} ({{ pub.year }})</li>
+  {% for pub in group.items %}
+  <li>
+    <strong>{{ pub.title }}</strong><br>
+    {{ pub.authors }} &mdash; <em>{{ pub.venue }}</em><br>
+    <a href="{{ pub.pdf }}">PDF</a> &middot; <a href="{{ pub.doi }}">DOI</a>
+  </li>
   {% endfor %}
 </ul>
-<p><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
+{% endfor %}
 
-<h2>Team</h2>
+<h2 id="team">Team</h2>
 <ul>
-  {% for person in site.data.team limit:5 %}
-  <li>{{ person.name }}</li>
+  {% for person in site.data.team %}
+  <li><strong>{{ person.name }}</strong> &mdash; {{ person.role }}</li>
   {% endfor %}
 </ul>
-<p><a href="{{ '/team/' | relative_url }}">Meet everyone &rarr;</a></p>
