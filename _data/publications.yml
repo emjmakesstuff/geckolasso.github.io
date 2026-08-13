@@ -1,0 +1,34 @@
+# Edit this file to add/remove/change publications.
+# Newest first. pdf/doi can be "#" until you have a real link.
+
+- year: 2026
+  tag: "GL-2026-01"
+  title: "Placeholder — Peel-zone control in gecko-inspired dry adhesives under tether load"
+  authors: "A. Marlowe, R. Iyer, J. Sato"
+  venue: "Placeholder Journal / Conference"
+  pdf: "#"
+  doi: "#"
+
+- year: 2025
+  tag: "GL-2025-03"
+  title: "Placeholder — Release-on-demand actuation for lasso-style adhesive grasping"
+  authors: "J. Sato, A. Marlowe"
+  venue: "Placeholder Conference on Soft Robotics"
+  pdf: "#"
+  doi: "#"
+
+- year: 2025
+  tag: "GL-2025-01"
+  title: "Placeholder — Fatigue behavior of spatula arrays across substrate roughness"
+  authors: "P. Devan, R. Iyer, A. Marlowe"
+  venue: "Placeholder Journal of Bio-Inspired Engineering"
+  pdf: "#"
+  doi: "#"
+
+- year: 2024
+  tag: "GL-2024-02"
+  title: "Placeholder — A tethered dry-adhesive end effector for irregular-object retrieval"
+  authors: "A. Marlowe, R. Iyer"
+  venue: "Placeholder Robotics Workshop"
+  pdf: "#"
+  doi: "#"

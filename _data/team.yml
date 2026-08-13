@@ -1,0 +1,23 @@
+# Edit this file to add/remove/change team members.
+# color options: moss, ochre, slate
+
+- name: "Ada Marlowe"
+  role: "Principal Investigator"
+  focus: "Peel mechanics of dry adhesives under dynamic tether load"
+  color: moss
+- name: "Rohan Iyer"
+  role: "PhD Candidate"
+  focus: "Spatula-scale contact modeling and fabrication"
+  color: ochre
+- name: "Junko Sato"
+  role: "PhD Candidate"
+  focus: "Tether dynamics and release-on-demand actuation"
+  color: slate
+- name: "Priya Devan"
+  role: "Undergraduate Researcher"
+  focus: "Adhesive fatigue testing across substrate roughness"
+  color: moss
+- name: "Owen Farrow"
+  role: "Lab Manager"
+  focus: "Rig fabrication and safety"
+  color: ochre

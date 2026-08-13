@@ -1,0 +1,70 @@
+---
+layout: default
+title: Home
+description: "Gecko-adhesion-inspired grasping and retrieval systems research."
+---
+
+<section class="hero">
+  <div class="hero-motif">{% include motif-branch.html class="hero-mark" %}</div>
+  <p class="eyebrow">GeckoLasso Research Group</p>
+  <h1>Grip without<br>crushing.</h1>
+  <p class="hero-lede">
+    We build gecko-adhesion&#8209;tipped tethers that grasp irregular,
+    delicate, or low&#8209;friction objects &mdash; no clamping force,
+    no bespoke fixture, no damage on contact.
+  </p>
+  <p class="hero-note">Placeholder copy &mdash; swap in your real project description.</p>
+</section>
+
+<section class="idea-strip">
+  <p class="eyebrow">How it works</p>
+  <div class="steps">
+    <div class="step">
+      <span class="step-label">Approach</span>
+      <p>The tether is thrown or extended toward the target, no alignment required.</p>
+    </div>
+    <div class="step">
+      <span class="step-label">Contact</span>
+      <p>A gecko&#8209;inspired pad meets the surface; setae conform to microscale texture.</p>
+    </div>
+    <div class="step">
+      <span class="step-label">Adhere</span>
+      <p>Shear loading engages van der Waals contact &mdash; strong grip, zero suction or glue.</p>
+    </div>
+    <div class="step">
+      <span class="step-label">Release</span>
+      <p>A peel angle change drops adhesion to near zero on command.</p>
+    </div>
+  </div>
+</section>
+
+<section class="teaser">
+  <div class="teaser-head">
+    <p class="eyebrow">Recent publications</p>
+    <a href="{{ '/publications/' | relative_url }}" class="teaser-link">All publications &rarr;</a>
+  </div>
+  <ul class="pub-list pub-list--compact">
+    {% for pub in site.data.publications limit:3 %}
+    <li>
+      <span class="pub-tag">{{ pub.tag }}</span>
+      <span class="pub-title">{{ pub.title }}</span>
+      <span class="pub-year">{{ pub.year }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="teaser">
+  <div class="teaser-head">
+    <p class="eyebrow">Team</p>
+    <a href="{{ '/team/' | relative_url }}" class="teaser-link">Meet everyone &rarr;</a>
+  </div>
+  <div class="team-strip">
+    {% for person in site.data.team limit:5 %}
+    <div class="team-strip-item">
+      {% include avatar.html name=person.name color=person.color %}
+      <span>{{ person.name }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>

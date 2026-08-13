@@ -1,0 +1,14 @@
+{%- comment -%}
+  Placeholder avatar: initials over a tinted branch motif.
+  Params: name, color (moss|ochre|slate)
+{%- endcomment -%}
+{%- assign words = include.name | split: " " -%}
+{%- assign initials = "" -%}
+{%- for w in words -%}
+  {%- assign letter = w | slice: 0, 1 -%}
+  {%- assign initials = initials | append: letter -%}
+{%- endfor -%}
+<div class="avatar avatar--{{ include.color | default: 'moss' }}">
+  {% include motif-branch.html class="avatar-mark" stem="false" %}
+  <span class="avatar-initials">{{ initials | slice: 0, 2 }}</span>
+</div>
