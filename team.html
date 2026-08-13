@@ -1,22 +1,12 @@
 ---
-layout: default
+layout: page
 title: Team
 permalink: /team/
 description: "The people behind the GeckoLasso research group."
 ---
 
-<section class="page-header">
-  <p class="eyebrow">Team</p>
-  <h1>Who's building it.</h1>
-</section>
-
-<section class="team-grid">
+<ul>
   {% for person in site.data.team %}
-  <article class="team-card">
-    {% include avatar.html name=person.name color=person.color %}
-    <h3>{{ person.name }}</h3>
-    <p class="team-role">{{ person.role }}</p>
-    <p class="team-focus">{{ person.focus }}</p>
-  </article>
+  <li><strong>{{ person.name }}</strong> &mdash; {{ person.role }}</li>
   {% endfor %}
-</section>
+</ul>

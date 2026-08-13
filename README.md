@@ -1,7 +1,8 @@
 # GeckoLasso site
 
-A fully custom Jekyll site (no theme gem) for the GeckoLasso research
-project, built to be served from `geckolasso.github.io`.
+A Jekyll site for the GeckoLasso research project, built on the
+[minima](https://jekyll.github.io/minima/) theme and served from
+`geckolasso.github.io`.
 
 ## Deploying
 
@@ -28,26 +29,20 @@ Visit `http://localhost:4000`.
 
 ## Where to edit things
 
-- **Team members** → `_data/team.yml`. Add/remove entries; each gets an
-  auto-generated initials avatar (no photo needed). `color` can be
-  `moss`, `ochre`, or `slate`.
+- **Team members** → `_data/team.yml`. Add/remove entries as needed.
 - **Publications** → `_data/publications.yml`. Newest first; grouped by
   year automatically on the Publications page.
 - **Homepage copy** → `index.html` (hero text, the four-step "how it
-  works" strip).
-- **Site title / contact email / description** → `_config.yml`.
-- **Colors, type, spacing** → `assets/css/main.css`. The palette and
-  fonts are declared as CSS variables at the top of the file under
-  `:root` — change those and everything updates.
-- **The branching-line motif** (used in the hero, footer, and as the
-  basis for avatars) → `_includes/motif-branch.html`. It's a single
-  reusable SVG partial.
+  works" list).
+- **Site title / description / contact email / nav pages** →
+  `_config.yml`. See the [minima docs](https://jekyll.github.io/minima/)
+  for the full list of supported options (skins, social links, etc.).
 
 ## Notes
 
 - All page copy and every team/publication entry right now is
   placeholder — swap it for your real project description, people, and
   papers whenever you're ready.
-- No theme gem is used, so nothing here depends on minima or minimal —
-  it's plain HTML/Liquid + one stylesheet, which also means GitHub Pages
-  can build it without any special configuration.
+- The site uses minima's default styling — no custom CSS or layouts.
+  If you want to tweak colors or spacing later, override minima's
+  Sass variables in a `assets/main.scss` file (see the minima docs).

@@ -1,70 +1,37 @@
 ---
-layout: default
-title: Home
+layout: page
+title: Grip without crushing.
+permalink: /
 description: "Gecko-adhesion-inspired grasping and retrieval systems research."
 ---
 
-<section class="hero">
-  <div class="hero-motif">{% include motif-branch.html class="hero-mark" %}</div>
-  <p class="eyebrow">GeckoLasso Research Group</p>
-  <h1>Grip without<br>crushing.</h1>
-  <p class="hero-lede">
-    We build gecko-adhesion&#8209;tipped tethers that grasp irregular,
-    delicate, or low&#8209;friction objects &mdash; no clamping force,
-    no bespoke fixture, no damage on contact.
-  </p>
-  <p class="hero-note">Placeholder copy &mdash; swap in your real project description.</p>
-</section>
+<p>
+  We build gecko-adhesion&#8209;tipped tethers that grasp irregular,
+  delicate, or low&#8209;friction objects &mdash; no clamping force,
+  no bespoke fixture, no damage on contact.
+</p>
+<p><em>Placeholder copy &mdash; swap in your real project description.</em></p>
 
-<section class="idea-strip">
-  <p class="eyebrow">How it works</p>
-  <div class="steps">
-    <div class="step">
-      <span class="step-label">Approach</span>
-      <p>The tether is thrown or extended toward the target, no alignment required.</p>
-    </div>
-    <div class="step">
-      <span class="step-label">Contact</span>
-      <p>A gecko&#8209;inspired pad meets the surface; setae conform to microscale texture.</p>
-    </div>
-    <div class="step">
-      <span class="step-label">Adhere</span>
-      <p>Shear loading engages van der Waals contact &mdash; strong grip, zero suction or glue.</p>
-    </div>
-    <div class="step">
-      <span class="step-label">Release</span>
-      <p>A peel angle change drops adhesion to near zero on command.</p>
-    </div>
-  </div>
-</section>
+<h2>How it works</h2>
+<ol>
+  <li><strong>Approach</strong> &mdash; The tether is thrown or extended toward the target, no alignment required.</li>
+  <li><strong>Contact</strong> &mdash; A gecko&#8209;inspired pad meets the surface; setae conform to microscale texture.</li>
+  <li><strong>Adhere</strong> &mdash; Shear loading engages van der Waals contact &mdash; strong grip, zero suction or glue.</li>
+  <li><strong>Release</strong> &mdash; A peel angle change drops adhesion to near zero on command.</li>
+</ol>
 
-<section class="teaser">
-  <div class="teaser-head">
-    <p class="eyebrow">Recent publications</p>
-    <a href="{{ '/publications/' | relative_url }}" class="teaser-link">All publications &rarr;</a>
-  </div>
-  <ul class="pub-list pub-list--compact">
-    {% for pub in site.data.publications limit:3 %}
-    <li>
-      <span class="pub-tag">{{ pub.tag }}</span>
-      <span class="pub-title">{{ pub.title }}</span>
-      <span class="pub-year">{{ pub.year }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<h2>Recent publications</h2>
+<ul>
+  {% for pub in site.data.publications limit:3 %}
+  <li>{{ pub.title }} ({{ pub.year }})</li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
 
-<section class="teaser">
-  <div class="teaser-head">
-    <p class="eyebrow">Team</p>
-    <a href="{{ '/team/' | relative_url }}" class="teaser-link">Meet everyone &rarr;</a>
-  </div>
-  <div class="team-strip">
-    {% for person in site.data.team limit:5 %}
-    <div class="team-strip-item">
-      {% include avatar.html name=person.name color=person.color %}
-      <span>{{ person.name }}</span>
-    </div>
-    {% endfor %}
-  </div>
-</section>
+<h2>Team</h2>
+<ul>
+  {% for person in site.data.team limit:5 %}
+  <li>{{ person.name }}</li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/team/' | relative_url }}">Meet everyone &rarr;</a></p>

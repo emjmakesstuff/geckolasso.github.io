@@ -1,20 +1,26 @@
 title: GeckoLasso
 description: >-
   Gecko-adhesion-inspired grasping and retrieval systems research.
-url: "https://geckolasso.github.io"
-baseurl: ""
+url: "https://emjmakesstuff.github.io"
+baseurl: "/geckolasso.github.io"
 
-markdown: kramdown
-kramdown:
-  input: GFM
+theme: minima
 
-permalink: /:title/
+minima:
+  skin: classic
+  social_links:
+    - platform: github
+      user_url: "https://github.com/geckolasso"
 
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+email: lab@geckolasso.example.edu
+
+header_pages:
+  - publications.html
+  - team.html
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
@@ -22,7 +28,3 @@ exclude:
   - README.md
   - vendor
   - node_modules
-
-# Edit these — they show up in the footer and nav
-contact_email: "lab@geckolasso.example.edu"
-github_org: "geckolasso"
